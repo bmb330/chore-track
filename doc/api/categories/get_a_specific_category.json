@@ -1,0 +1,48 @@
+{
+  "resource": "Categories",
+  "http_method": "GET",
+  "route": "/categories/:category_id",
+  "description": "Get a specific category",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "id",
+      "description": "Category id"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/categories/63",
+      "request_body": null,
+      "request_headers": {
+        "Context-Type": "application/json",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"category\": {\n    \"id\": 63,\n    \"name\": \"Category 1\"\n  }\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"2d5027d66d6a10a08c6de05cfe5edee6\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "f2de3e36-afbe-4703-b87b-3d5548c91bab",
+        "X-Runtime": "0.002779",
+        "Content-Length": "42"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "resources": [
+    {
+      "name": "Categories",
+      "examples": [
+        {
+          "description": "Create a category",
+          "link": "categories/create_a_category.json",
+          "groups": "all",
+          "route": "/categories",
+          "method": "post"
+        },
+        {
+          "description": "Delete a category",
+          "link": "categories/delete_a_category.json",
+          "groups": "all",
+          "route": "/categories/:category_id",
+          "method": "delete"
+        },
+        {
+          "description": "Get a list of categories",
+          "link": "categories/get_a_list_of_categories.json",
+          "groups": "all",
+          "route": "/categories",
+          "method": "get"
+        },
+        {
+          "description": "Get a specific category",
+          "link": "categories/get_a_specific_category.json",
+          "groups": "all",
+          "route": "/categories/:category_id",
+          "method": "get"
+        },
+        {
+          "description": "Update a category",
+          "link": "categories/update_a_category.json",
+          "groups": "all",
+          "route": "/categories/:category_id",
+          "method": "patch"
+        }
+      ]
+    }
+  ]
+}

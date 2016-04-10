@@ -1,0 +1,51 @@
+{
+  "resource": "Categories",
+  "http_method": "POST",
+  "route": "/categories",
+  "description": "Create a category",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "scope": "category",
+      "name": "name",
+      "description": "Category name"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/categories",
+      "request_body": "category[name]=New+Category",
+      "request_headers": {
+        "Context-Type": "application/json",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"category\": {\n    \"id\": 64,\n    \"name\": \"New Category\"\n  }\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Location": "http://example.org/categories/64",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"2ce7d4047116922ff08a54f05ab7f441\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "77942345-e7c3-4d44-abcb-27a89c878ac4",
+        "X-Runtime": "0.007054",
+        "Content-Length": "44"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

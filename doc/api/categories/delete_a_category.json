@@ -1,0 +1,46 @@
+{
+  "resource": "Categories",
+  "http_method": "DELETE",
+  "route": "/categories/:category_id",
+  "description": "Delete a category",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "id",
+      "description": "Category id"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "DELETE",
+      "request_path": "/categories/66",
+      "request_body": null,
+      "request_headers": {
+        "Context-Type": "application/json",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 204,
+      "response_status_text": "No Content",
+      "response_body": null,
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Cache-Control": "no-cache",
+        "X-Request-Id": "fd4aec53-ba7a-4da6-95e3-99dd52d6cfb2",
+        "X-Runtime": "0.002395"
+      },
+      "response_content_type": null,
+      "curl": null
+    }
+  ]
+}
