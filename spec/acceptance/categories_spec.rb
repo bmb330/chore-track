@@ -1,6 +1,7 @@
 require 'acceptance_helper'
 
 RSpec.resource "Categories" do
+  header "Accept", "application/json"
   header "Context-Type", "application/json"
 
   shared_context "category parameters" do
@@ -20,8 +21,10 @@ RSpec.resource "Categories" do
   end
 
   get "/categories" do
-    FactoryGirl.build :category, name: 'First category'
-    FactoryGirl.build :category, name: 'Second category'
+    before do
+      FactoryGirl.create :category, name: 'First category'
+      FactoryGirl.create :category, name: 'Second category'
+    end
 
     example_request "Get a list of categories" do
       categories = JSON.parse response_body
