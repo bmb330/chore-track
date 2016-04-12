@@ -60,7 +60,6 @@ RSpec.resource "Chores" do
     
     example_request "Create a chore" do
       chore = JSON.parse response_body
-      expect(chore).to eq name
       expect(chore["chore"]["name"]).to eq name
       expect(status).to eq 201
     end
